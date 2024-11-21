@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{   
+    width: 100px;
+    height: 96px;
+    border: 2px solid green;
+    border-radius: 50%;
+    margin: 5px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.navList{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.navList li{
+    list-style: none;
+    padding: 23px 30px;
+    font-size: 20px;
+    font-family: 'Pattaya', sans-serif;
+
+}
+.navList li a{
+text-decoration: none;
+color:rgb(44, 43, 43);
+}
+.navList li a:hover{
+    text-decoration: none;
+    color: rgb(1, 80, 12);
+    }
+.rightNav{
+    padding: 0 23px;
+    width: 30%;
+    text-align: right;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(167, 199, 164, 0.979);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.crops_image{
+    width: 253px;
+}
+.crops{
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px solid rgba(18, 19, 17, 0.514);
+    margin: 30px;
+    background-color: rgba(43, 146, 83, 0.61);
+}
+.crops_container{
+    border: 5px solid rgba(113, 219, 113, 0.63);
+    padding: 2px;
+    margin: 10px;
+    border-radius: 35px;
+}
+p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+    border: 2px solid rgb(128, 189, 128);
+    background: green;
+
+}
+.btt{
+    border: 2px solid rgba(66, 175, 66, 0.719);
+    padding: 13px;
+    margin: 30px;
+    text-align: center;
+    background: rgba(109, 207, 109, 0.781);
+    cursor: pointer;
+}
+.btt:hover{
+    opacity: 0.8;
+    color: black;
+    background-color: rgb(11, 241, 11);
+}

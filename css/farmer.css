@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{   
+    width: 100px;
+    height: 96px;
+    border: 2px solid green;
+    border-radius: 50%;
+    margin: 5px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.navList{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.navList li{
+    list-style: none;
+    padding: 23px 30px;
+    font-size: 20px;
+    font-family: 'Pattaya', sans-serif;
+
+}
+.navList li a{
+text-decoration: none;
+color:rgb(44, 43, 43);
+}
+.navList li a:hover{
+    text-decoration: none;
+    color: rgb(1, 80, 12);
+    }
+.rightNav{
+    padding: 0 23px;
+    width: 30%;
+    text-align: right;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(167, 199, 164, 0.979) url('../img/b1.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstSection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(44, 43, 43);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 50%;
+    margin: auto;
+    height: 75%;
+}
+.firstHalf{
+    width: 80%;
+    flex-direction: column;
+    display: flex; 
+    font-family: 'Pattaya', sans-serif;
+   
+}
+.secondHalf{
+    width: 50%;
+    height: 40%;
+}
+.secondHalf img{
+    width: 50%;
+}
+.text-big{
+    font-size: 25px;
+}
+.text-small{
+    font-size: 18px;
+}
+.btn{
+    padding: 8px 15px;
+    margin: 24px 0;
+    border: 2px solid rgba(255, 255, 255, 0.856);
+    border-radius: 8px;
+    background: rgba(57, 161, 26, 0.856);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto; font-family: 'Pattaya', sans-serif;
+    padding: 8px;
+}
+.section-left{
+    height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    
+}
+.paras{
+    padding: 0px 65px;
+}
+.sectionTag{
+    padding: 10px;
+}
+.sectionSubTag{
+    font-family: 'Niconne', cursive;
+    font-size: 30px;
+}
+.thumbnail img{
+    width: 250px;
+    border: 2px solid white;
+    border-radius: 10%;
+}
+.contact{
+    background-color: rgba(225, 253, 220, 0.678);
+    height: 55vh;
+}
+.text-center{
+    text-align: center;
+    padding-top: 20px;
+    font-family:'Dancing Script', cursive;
+}
+.form{
+    max-width: 70%;
+    margin:10px auto;
+    
+}
+.form input{
+    margin: 10px 0;
+    width: 100%;
+    font-size: 19px;
+    border:2px solid gray;
+    border-radius: 6px;
+  
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Pattaya', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+@media only screen and (max-width: 1085px){
+    .navList{
+        flex-direction: column;
+    }
+    .navbar{
+    height: 478px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height:72px;
+    }
+    .v-class-resp{
+        opacity:0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px;
+    }
+    .secondHalf{
+        margin-left: 25%;
+        padding: 25px;
+    }
+    }
